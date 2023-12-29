@@ -13,10 +13,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter a username"],
   },
-  dob: {
-    type: String,
-    required: [true, "Please enter a username"],
-  },
   email: {
     type: String,
     required: true,
@@ -29,4 +25,5 @@ const userSchema = new mongoose.Schema({
     timestamps : true
 });
 const User = mongoose.model("User", userSchema);
-module.exports = User;
+
+export default User;
